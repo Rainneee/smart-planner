@@ -1,4 +1,4 @@
-import { TrendingUp, Upload, Download, FileText} from 'lucide-react';
+import { TrendingUp, Upload, Download, FileText } from 'lucide-react';
 
 function Header() {
   return (
@@ -14,7 +14,7 @@ function Header() {
               <p className="text-sm text-gray-400">Benchmark & analyze campaigns</p>
             </div>
           </div>
-          <div className='flex place-items-center flex-row gap-2'>
+          <div className='flex place-items-center flex-col md:flex-row gap-2'>
             <button className='px-4 py-2 bg-orange-400 border border-orange-400 rounded-lg flex flex-row place-items-center gap-2 shadow-sm'>
               <Upload color='white' size={20}/>
               <h2 className="text-base font-bold text-white">Upload Data</h2>
