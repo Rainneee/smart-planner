@@ -4,7 +4,7 @@ import CampaignObjective from "./charts/CampaignObjective.jsx"
 import CostEfficiency from "./charts/CostEfficiency.jsx"
 import Recommendations from "./charts/Recommendations.jsx"
 
-function Chart() {
+function Charts() {
   return (
     <>
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-5 p-2 bg-slate-300 shadow rounded-2xl">
@@ -18,4 +18,4 @@ function Chart() {
   )
 }
 
-export default Chart
+export default Charts

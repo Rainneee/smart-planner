@@ -1,26 +1,6 @@
-// CampaignList.js
-import { useState, useEffect } from 'react'
 import Campaign from "./Campaign.jsx";
-import AxiosInstance from './Axios.jsx';
 
-function CampaignList() {
-  const [campaigns, setData] = useState()
-  const [loading, setLoading] = useState(true)
-
-  const GetData = () => {
-    AxiosInstance.get('campaigns/').then((res) => {
-      setData(res.data)
-      setLoading(false)
-    })
-    .catch((err) => {
-      console.error('Error:', err);
-      setLoading(false);
-    });
-  }
-
-  useEffect(() => {
-    GetData();
-  },[])
+function CampaignList({campaigns, loading}) {
 
   return (
     <div className="overflow-auto min-w-full bg-white border border-neutral-200 rounded-xl dark:border-white/10">
@@ -33,8 +13,8 @@ function CampaignList() {
             <th>Buy Type</th>
             <th>Objective</th>
             <th>Placement</th>
-            <th colSpan={2}>CPU</th>
-            <th colSpan={2}>Est. KPI</th>
+            <th>CPU</th>
+            <th>Est. KPI</th>
             <th>Cost</th>
             <th>Start Date</th>
             <th>End Date</th>
@@ -43,7 +23,7 @@ function CampaignList() {
         <tbody>
           {!loading && campaigns.length > 0 ? (
             campaigns.map((campaign) => (
-              <Campaign campaign={campaign} />
+              <Campaign key={campaign.id} campaign={campaign} />
             ))
           ) : (
             <tr>
