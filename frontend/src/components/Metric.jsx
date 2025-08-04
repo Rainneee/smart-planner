@@ -1,7 +1,7 @@
 import { NumericFormat } from 'react-number-format';
 
 function Metric({metric}) {
-  const { icon: Icon, title, value, median, color } = metric;
+  const { icon: Icon, title, value, median, gradient, border, hover } = metric;
   
   const CPUFormat = () => (
     <NumericFormat
@@ -25,10 +25,10 @@ function Metric({metric}) {
 
   return (
     <>
-      <div className={`col-span-1 bg-white p-8 shadow-lg shadow-orange-100 rounded-2xl border-2 border-orange-300 hover:shadow-xl hover:border-orange-400`}>
+      <div className={`col-span-1 bg-white p-8 shadow-lg rounded-2xl border-2 ${border} hover:shadow-xl ${hover}`}>
         <div className="flex justify-between">
           <h1 className="text-2xl font-bold mb-2">{title}</h1>
-          <div className={`p-2 bg-gradient-to-r from-orange-500 to-orange-600 rounded-xl shadown-sm`}>
+          <div className={`p-2 bg-gradient-to-r ${gradient} rounded-xl shadown-sm`}>
             <Icon color='white' size={30}/>
           </div>
         </div>
