@@ -4,7 +4,4 @@ from api.views import CampaignViewSet
 
 router = DefaultRouter()
 router.register(r'campaigns', CampaignViewSet, basename='campaign')
-
-urlpatterns = [
-    path('', include(router.urls)),
-]
+urlpatterns = router.urls

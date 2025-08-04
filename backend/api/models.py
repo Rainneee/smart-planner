@@ -8,7 +8,7 @@ class Campaign(models.Model):
   placement = models.CharField(max_length=255)
   cpu_value = models.DecimalField(max_digits=10, decimal_places=2)
   cpu_type = models.CharField(max_length=10)
-  est_kpi = models.IntegerField()
+  est_kpi = models.DecimalField(max_digits=10, decimal_places=2)
   cost = models.DecimalField(max_digits=12, decimal_places=2)
   campaign_name = models.CharField(max_length=255)
   start_date = models.DateField()
