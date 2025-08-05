@@ -1,7 +1,7 @@
 import Metric from "./Metric";
 import { Users, DollarSign, Target } from 'lucide-react';
 
-function Insights({benchmarks}) {
+function Insights({ benchmarks }) {
   const metrics = [
     {
       title: "Average CPU",

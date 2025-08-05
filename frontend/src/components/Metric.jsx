@@ -1,6 +1,6 @@
 import { NumericFormat } from 'react-number-format';
 
-function Metric({metric}) {
+function Metric( {metric} ) {
   const { icon: Icon, title, value, median, gradient, border, hover } = metric;
   
   const CPUFormat = () => (
