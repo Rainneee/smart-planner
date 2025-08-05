@@ -2,7 +2,6 @@ import { Search } from 'lucide-react';
 
 function Filters({ filters, setFilters, searchTerm, setSearchTerm, campaigns, filteredCount }) {
   const getUniqueValues = (key) => [...new Set(campaigns?.map(c => c[key]))];
-  console.log(campaigns)
   return (
     <>
       <div className="bg-white rounded-2xl shadow-lg border border-slate-200 p-6 mb-8">
