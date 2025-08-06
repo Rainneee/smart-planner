@@ -5,8 +5,8 @@ function Insights({ benchmarks }) {
   const metrics = [
     {
       title: "Average CPU",
-      value: benchmarks.cpu.average,
-      median: benchmarks.cpu.median,
+      value: benchmarks.cpu.average.toFixed(2),
+      median: benchmarks.cpu.median.toFixed(2),
       icon: Users,
       gradient: 'from-green-500 to-green-600',
       border: 'border-green-300',
@@ -14,8 +14,8 @@ function Insights({ benchmarks }) {
     },
     {
       title: 'Average Cost',
-      value: benchmarks.cost.average,
-      median: benchmarks.cost.average,
+      value: benchmarks.cost.average.toFixed(2),
+      median: benchmarks.cost.average.toFixed(2),
       icon: DollarSign,
       gradient: 'from-blue-500 to-blue-600',
       border: 'border-blue-300',
@@ -24,8 +24,8 @@ function Insights({ benchmarks }) {
     ,
     {
       title: 'Average KPI',
-      value: benchmarks.kpi.average,
-      median: benchmarks.kpi.average,
+      value: benchmarks.kpi.average.toFixed(2),
+      median: benchmarks.kpi.average.toFixed(2),
       icon: Target,
       gradient: 'from-orange-500 to-orange-600',
       border: 'border-orange-300',

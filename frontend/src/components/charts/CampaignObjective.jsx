@@ -13,7 +13,8 @@ function CampaignObjective( { campaigns } ) {
 
   return (
     <>
-      <div className="col-span-1 min-h-100 bg-white shadow-lg rounded-2xl px-5 pb-5 pt-8">
+      <div className="col-span-1 min-h-100 bg-white shadow-lg rounded-2xl px-5 pb-8 pt-8">
+        <h1 className='text-2xl font-bold mb-2'>Campaign Distribution by Objective</h1>
         <ResponsiveContainer width="100%" height="100%">
           <PieChart width={500} height={500}>
             <Tooltip />
