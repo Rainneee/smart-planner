@@ -7,17 +7,16 @@ function CampaignList({campaigns, loading}) {
       <table className='min-w-full table-fixed text-center text-sm font-light text-surface dark:text-white divide-y divide-gray-200 dark:divide-neutral-700'>
         <thead>
           <tr className="bg-gray-50">
-            <th>Campaign</th>
-            <th>Client</th>
-            <th>Platform</th>
-            <th>Buy Type</th>
-            <th>Objective</th>
-            <th>Placement</th>
-            <th>CPU</th>
-            <th>Est. KPI</th>
-            <th>Cost</th>
-            <th>Start Date</th>
-            <th>End Date</th>
+            <th className="text-left py-4 px-6 font-bold text-slate-700">Campaign</th>
+            <th className="text-left py-4 px-6 font-bold text-slate-700">Client</th>
+            <th className="text-left py-4 px-6 font-bold text-slate-700">Platform</th>
+            <th className="text-left py-4 px-6 font-bold text-slate-700">Buy Type</th>
+            <th className="text-left py-4 px-6 font-bold text-slate-700">Objective</th>
+            <th className="text-left py-4 px-6 font-bold text-slate-700">CPU</th>
+            <th className="text-left py-4 px-6 font-bold text-slate-700">Est. KPI</th>
+            <th className="text-left py-4 px-6 font-bold text-slate-700">Cost</th>
+            <th className="text-left py-4 px-6 font-bold text-slate-700">Start Date</th>
+            <th className="text-left py-4 px-6 font-bold text-slate-700">End Date</th>
           </tr>
         </thead>
         <tbody>

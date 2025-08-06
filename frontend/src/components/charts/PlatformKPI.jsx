@@ -21,7 +21,8 @@ function PlatformKPI( { campaigns } ) {
   }, [campaigns]);
 
   return (
-    <div className="col-span-1 min-h-80 bg-white shadow-lg rounded-2xl px-5 pb-5 pt-8">
+    <div className="col-span-1 min-h-100 bg-white shadow-lg rounded-2xl px-5 pb-8 pt-8">
+      <h1 className='text-2xl font-bold mb-2'>Campaign KPIs by Platform</h1>
       <ResponsiveContainer width="100%" height={300}>
         <BarChart
           data={averageKpiPerPlatform}
